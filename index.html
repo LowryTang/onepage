@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="bower_components/onepage-scroll/onepage-scroll.css">
+  <script type="text/javascript" src='bower_components/jquery/jquery.min.js'></script>
+  <script type="text/javascript" src='bower_components/onepage-scroll/jquery.onepage-scroll.js'></script>
+</head>
+
+<body>
+  <div class="main">
+    <section>fdsfd</section>
+    <section>fjdkfjejwklfe</section>
+    <section>fjdkfjejwklfe</section>
+    <section>fjdkfjejwklfe</section>
+  </div>
+</body>
+<script type="text/javascript">
+$(".main").onepage_scroll({
+  // easing: 'ease',
+  afterMove: function(index) {
+    console.log('afterMove', arguments);
+  },
+  beforeMove: function(index) {
+    console.log('beforeMove', arguments);
+  },
+  loop: false,
+});
+</script>
